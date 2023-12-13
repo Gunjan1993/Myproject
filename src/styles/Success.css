@@ -1,0 +1,82 @@
+.success {
+    width: 100%;
+    height: 130vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .successTop {
+    width: 100%;
+    height: 700px !important;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../assets/Success\ \(2\).png);
+  }
+  
+  .successBottom {
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+    align-items: center;
+    
+    
+  }
+  
+  .successBottom p {
+    width: 1000px;
+    
+  }
+  
+  .success .successBottom h1 {
+    font-weight: 400;
+    font-size: 50px;
+    color: black;   
+  }
+  .success .successBottom h2{
+    margin-top: 50px;
+    font-family: Wallington-Regular;
+  }
+  .success_foot{
+    background-color: red;
+    display: flex;
+    align-items: center;
+  }
+  .success_foot p{
+    margin-left: 150px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .success_foot button{
+    margin-left: 400px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    justify-content: center;
+    background-color: white;
+    height: 50px;
+    width: 240px;
+    color:black;
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 20px;
+    
+  }
+  .success_foot button:hover{
+    background-color: #ff2147;
+    cursor: pointer;
+    transition: 0.3s ease-in;
+    color: cornsilk;
+    box-shadow: 2px 2px 5px black;
+  }
+  .line{
+    width:15% ;
+    height: 5px;
+    margin:  -20px auto;
+    background-color: black;
+    color: black;
+  }
+  .success_foot{
+    height: 400px;
+  }

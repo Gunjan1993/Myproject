@@ -1,0 +1,92 @@
+.home {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    
+  }
+  
+  .headerContainer {
+    width: auto;
+    
+  }
+  
+  
+  
+  
+  
+   .headerContainer button {
+   
+    border: none;
+ 
+    
+    justify-content: center;
+    background-color: red;
+    
+  
+    text-decoration: none;
+    font-size: 20px;
+    
+    margin-left: 130px;
+    margin-top: 250px;
+    
+
+    padding: 12px 30px;
+    border-radius: 4px;
+    outline: none;
+    
+    font-size: 18px;
+    color: #fff;
+    cursor: pointer;
+    
+    width: 200px;
+    
+    font-weight: bold;
+  }
+  
+  .headerContainer button:hover {
+    background-color:#ff2147;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.3s ease-in;
+    color: cornsilk;
+    box-shadow: 2px 2px 5px white;
+  }
+  @media only screen and (min-width: 651px){
+.home{
+    background-image: url(../assets/hhhh.png);
+}
+
+  }
+  @media only screen and (max-width: 650px) {
+.home{
+    background-image: url(../assets/pure\ devotion\ foundation.png);
+    
+}
+    
+  
+   
+  
+    
+  
+    
+  
+    .headerContainer button {
+      background-color: red;
+      color: white;
+      margin-top: 550px;
+      margin-left: auto;
+    }
+  
+    .headerContainer button:hover {
+      background-color: rgb(225, 225, 225);
+      color: #121619;
+    }
+  }
+  

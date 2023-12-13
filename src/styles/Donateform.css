@@ -1,0 +1,96 @@
+.donatebox1{
+    height: 700px;
+    width: 650px;
+    background-color: black;
+    opacity: 0.7;
+    float: right;
+    margin-right: 100px;
+    color: white;
+    box-shadow: 10px 10px 20px gray;
+    border-radius: 10px;
+    padding-left: 30px;
+}
+.donate1{
+    width: 100%;
+    height: 110vh;
+    background-image: url(../assets/donatenow.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+}
+
+.donatebox1 p{
+    font-size: 12px;
+    justify-content: left;
+}
+.donatebox1 button{
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    justify-content: center;
+    background-color: red;
+    height: 30px;
+    width: 100px;
+    color:white;
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 15px;
+    margin: 10px;
+}
+.donatebox1 button:hover{
+    background-color: #ff2147;
+    cursor: pointer;
+    transition: 0.3s ease-in;
+    color: black;
+    box-shadow: 2px 2px 5px white;
+}
+.donatebox1 #proceed{
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    justify-content: center;
+    background-color: red;
+    height: 40px;
+    width: 400px;
+    color:white;
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 20px;
+    margin-left: 60px;
+}
+.donatebox1 #checkout:hover{
+    background-color: #ff2147;
+    cursor: pointer;
+    transition: 0.3s ease-in;
+    color: black;
+    box-shadow: 2px 2px 5px white; 
+}
+.donatebox1 input{
+    border-style: none;
+    height:30px;
+    width: 400px;
+    border-radius: 5px;
+    background-color: white;
+    margin-left: 50px;
+    font-size: 15px;
+    padding-left: 20px;
+    margin-bottom: 5px;
+}
+input::placeholder{
+    color: gray;
+}
+textarea{
+    border-radius: 5px;
+    background-color: white;
+    margin-left: 50px;
+    font-size: 15px;
+    padding-left: 20px;
+    margin-bottom: 5px;
+    border-style: none;
+    width: 400px !important;
+    margin-top: 0px !important;
+    height: 50px !important;
+}
+textarea::placeholder{
+    color: gray;
+}

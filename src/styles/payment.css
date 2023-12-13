@@ -1,0 +1,39 @@
+
+
+
+table,th,td{
+    border:2px solid black;
+}
+table{
+    margin:auto;
+    width:70%;
+    margin-top:20px;
+}
+#submitbtnn{
+    width: 300px;
+    margin-left:590px;
+    border: none;
+ 
+    
+    justify-content: center;
+    background-color: red;
+    
+  
+    text-decoration: none;
+    font-size: 20px;
+    
+    
+    
+
+    padding: 12px 30px;
+    border-radius: 4px;
+    outline: none;
+    
+    font-size: 18px;
+    color: #fff;
+    cursor: pointer;
+    
+    
+    
+    font-weight: bold;
+}

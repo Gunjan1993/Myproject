@@ -1,0 +1,126 @@
+.footer {
+    width: 100%;
+    height: 400px;
+    background-color: #121619;
+   color: white;
+    justify-content: center;
+    align-items:left;
+    flex-direction: column;
+    padding-top: 10px;
+  }
+  .contactleft{
+    float: left;
+    text-align: left;
+    width: 500px;
+    padding-left: 100px;
+    
+    height:250px;
+    margin-top: 50px;
+  }
+  .contactleft img{
+    width:150px;
+  }
+  
+  
+  .footer p {
+    color: white;
+  }
+  .contactright{
+    margin-top: 50px;
+    float: right;
+    width: 500px;
+    padding-left: 100px;
+    
+    height: 250px;
+    text-align: left;
+  }
+  .copyrights{
+    padding-top: 250px;
+    
+    text-align: center;
+  }
+  .copyrights a{
+    text-decoration: none ;
+    color: white;
+  }
+  .copyrights a:hover {
+    color: red;
+    cursor: pointer;
+    transition: 0.3s ease-in;
+  }
+   #fb:hover{
+    color:  #0866ff;
+    cursor: pointer;
+    transition: 0.3s ease-in;
+    
+  }
+   #yt:hover{
+    color: red;
+    cursor: pointer;
+    transition: 0.3s ease-in;
+    
+  }
+   #insta:hover{
+    
+    cursor: pointer;
+    transition: 0.3s ease-in;
+    color:#f7018f
+    
+  }
+  .mobileview a{
+text-decoration: none !important;
+color: white;
+  }
+  .socialMedia a {
+    text-align: center;
+    color: white;
+  }
+  
+  @media screen and (max-width: 600px), (max-width: 900px) and (min-width: 600px){
+.webview{
+    display: none;
+}
+.copyright a{
+    text-decoration: none ;
+    color: white;
+    padding-bottom: 50px;
+  }
+  .copyright a:hover {
+    color: red;
+    cursor: pointer;
+    transition: 0.3s ease-in;
+  }
+.mobileview{
+    height: 550px;
+    background-color:#121619;
+}
+  }
+  @media screen and (min-width: 900px) and (max-width: 1200px){
+.mobileview{
+    display: none;
+}
+.webview{
+    display: inherit;
+}
+
+.contactleft{
+    padding-left: 0px;
+    width: 400px;
+    margin-top: 0px;
+}
+.contactright{
+    padding-right: 0px;
+    margin-top: 0px;
+    width: 400px;
+}
+.socialMedia {
+  text-align: center;
+}
+
+  }
+  @media only screen and (min-width: 1200px) {
+    .mobileview{
+        display:none;}
+
+    }
+  
