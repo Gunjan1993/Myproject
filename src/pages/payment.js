@@ -124,8 +124,8 @@ console.log(hash);
     <input  type="hidden" name="email"  value={email}/>
     <input type="hidden" name="firstname" value={firstName} />
     <input type="hidden" name="lastname" value={lastName} />
-    <input type="hidden" name="surl" value="https://apiplayground-response.herokuapp.com/" />
-    <input type="hidden" name="furl" value="https://apiplayground-response.herokuapp.com/" />
+    <input type="hidden" name="surl" value="https://gunjan1993.github.io/success" />
+    <input type="hidden" name="furl" value="https://gunjan1993.github.io/failure" />
     <input type="hidden" name="phone" value={phone} />
     <input type="hidden" name="hash" value={hash} />
     <input type="submit" id="submitbtnn" value="Checkout" /> 
