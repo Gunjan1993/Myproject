@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/Myproject/static/css/main.ea03cfd1.css",
+    "main.js": "/Myproject/static/js/main.dcbbcc27.js",
+    "static/js/787.eae1d6c0.chunk.js": "/Myproject/static/js/787.eae1d6c0.chunk.js",
+    "static/media/c1.png": "/Myproject/static/media/c1.f911696255cf8f7a8b42.png",
+    "static/media/WhatsApp_Image_2023-12-07_at_17_upscaled.jpeg": "/Myproject/static/media/WhatsApp_Image_2023-12-07_at_17_upscaled.7c87a5dc336c23d0caca.jpeg",
+    "static/media/donatenow.png": "/Myproject/static/media/donatenow.40125681dbd78a24aa76.png",
+    "static/media/medical_final.png": "/Myproject/static/media/medical_final.378314a489a9d6a96c97.png",
+    "static/media/hhhh.png": "/Myproject/static/media/hhhh.5e1667662a3eb7bd3ce9.png",
+    "static/media/c4.jpg": "/Myproject/static/media/c4.0e4ee9d8146656faa48f.jpg",
+    "static/media/c2.jpg": "/Myproject/static/media/c2.886d1da5ebeb2850f103.jpg",
+    "static/media/c3.jpg": "/Myproject/static/media/c3.c4ed3cfce79b7c7d87e8.jpg",
+    "static/media/Success (2).png": "/Myproject/static/media/Success (2).0f54f379a9aa5775470e.png",
+    "static/media/blanket_final2.png": "/Myproject/static/media/blanket_final2.1083680caee1d692164a.png",
+    "static/media/Untitled design.png": "/Myproject/static/media/Untitled design.899b1e84faa629fde8f6.png",
+    "static/media/Logo.png": "/Myproject/static/media/Logo.cfbb1e2bf1bed0901f15.png",
+    "static/media/grocery final.png": "/Myproject/static/media/grocery final.b44bf0c706b78261af66.png",
+    "static/media/adopt final.png": "/Myproject/static/media/adopt final.7d72ffede7eb65dfbe64.png",
+    "static/media/pure devotion foundation.png": "/Myproject/static/media/pure devotion foundation.a258d35ee817315d4c18.png",
+    "static/media/download_upscaled.png": "/Myproject/static/media/download_upscaled.c1aaa6cb8afb05d006b1.png",
+    "static/media/success_upscaled-removebg-preview.png": "/Myproject/static/media/success_upscaled-removebg-preview.4aa4e6346dd6f6426b63.png",
+    "static/media/error-icon-32-removebg-preview.png": "/Myproject/static/media/error-icon-32-removebg-preview.ba58ec4bd63201afc6d6.png",
+    "static/media/Voga-Medium.ttf": "/Myproject/static/media/Voga-Medium.6934166f5074112f830d.ttf",
+    "static/media/Wallington-Regular.ttf": "/Myproject/static/media/Wallington-Regular.8179d9c02c90ea9b6fd6.ttf",
+    "static/media/login.png": "/Myproject/static/media/login.1b8aaead1a7c6b710725.png",
+    "index.html": "/Myproject/index.html",
+    "main.ea03cfd1.css.map": "/Myproject/static/css/main.ea03cfd1.css.map",
+    "main.dcbbcc27.js.map": "/Myproject/static/js/main.dcbbcc27.js.map",
+    "787.eae1d6c0.chunk.js.map": "/Myproject/static/js/787.eae1d6c0.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ea03cfd1.css",
+    "static/js/main.dcbbcc27.js"
+  ]
+}
