@@ -9,6 +9,7 @@
   .menu .menuTitle {
     font-family: cursive;
     font-size: 50px;
+    margin-top: 80px;
   }
   
   .menuList {
@@ -50,6 +51,7 @@
   .menuItem h1{
     font-size: 20px;
     height: 10%;
+  
     
   }
   .menuItem button{
@@ -74,9 +76,10 @@
     color: cornsilk;
     box-shadow: 2px 2px 5px black;
   }
-  .menuItem h1,
+  
   .menuItem p {
-    margin-left: 20px;
+    padding: 0 20px;
+    
   }
   
   @media only screen and (max-width: 1300px) {

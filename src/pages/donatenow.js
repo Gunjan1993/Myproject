@@ -14,6 +14,10 @@ const hidebtns=()=>{
 
     
 function Donatenow() {
+  useEffect(() => {
+    // 👇️ scroll to top on page load
+    window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
+  }, []);
 function otheramount(e){
   setValueother(e.target.value);
 }
@@ -22,7 +26,12 @@ function checkamount(){
   if(valueother<200){
     
     navigatte("/donatenow")
-    document.getElementById("amounterror").innerHTML="*Value entered should be greater than or equal to 201"
+    document.getElementById("amounterror").innerHTML="*Amount entered should be atleast ₹200"
+  }
+  else if( show===true&&document.getElementById("textin").value===""){
+    
+    navigatte("/donatenow")
+    document.getElementById("amounterror").innerHTML="*Amount entered should be atleast ₹200"
   }
   else{
     navigatte("/donateform",{state:{finamount:money}})
@@ -33,6 +42,7 @@ useEffect(()=>{
   if(show===true){
     money=document.getElementById("textin").value;
   }
+  
   else{
     money=document.getElementById("buttonin").value;
   }

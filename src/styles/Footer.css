@@ -93,6 +93,7 @@ color: white;
 .mobileview{
     height: 550px;
     background-color:#121619;
+    margin-bottom: 0px;
 }
   }
   @media screen and (min-width: 900px) and (max-width: 1200px){

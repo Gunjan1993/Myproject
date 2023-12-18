@@ -1,5 +1,12 @@
 .App {
   text-align: center;
+  
 }
-
+@media screen and (max-width:600px) {
+  html,body{
+    width: 100%;
+    overflow-x: hidden;
+  }
+  
+}
 

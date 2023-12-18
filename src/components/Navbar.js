@@ -1,6 +1,6 @@
-import React, {useState} from 'react'
+import React, {useEffect, useState} from 'react'
 import Logo from '../assets/Logo.png'
-import Login from '../assets/login.png'
+//import Login from '../assets/login.png'
 import {Link} from 'react-router-dom'
 
 import '../styles/Navbar.css'
@@ -15,11 +15,23 @@ import Button from './Button'
 
 function Navbar() {
 
+  
   const [click, setClick] = useState(false);
   const [dropdown, setDropdown] = useState(false);
+  const[campaignclick,setCampaignclick]=useState(false);
 
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
+
+  useEffect( () => {
+    if (window.innerWidth < 960) {
+      setCampaignclick(true);
+    }
+    else{
+      setCampaignclick(false);
+    }
+  },[]);
+
 
   const onMouseEnter = () => {
     if (window.innerWidth < 960) {
@@ -37,6 +49,7 @@ function Navbar() {
     }
   };
   
+  
    
             return(
               <>
@@ -45,7 +58,7 @@ function Navbar() {
         <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
           
            <img src={Logo} style={{width:"100px", display:"inline-flex"}} alt='Pure Devotion Logo'></img>
-           <span style={{marginTop:"10px", marginLeft:"20px"}}>Pure Devotion</span>
+           <span style={{marginTop:"10px", marginLeft:"20px"}} id='PD'>Pure Devotion</span>
           
         </Link>
        
@@ -66,11 +79,11 @@ function Navbar() {
             onMouseLeave={onMouseLeave}
           >
             <Link
-              to='#'
+              to={campaignclick?"/campaign":"#"}
               className='nav-links'
-              onClick={closeMobileMenu}
+              onClick={()=>closeMobileMenu()}
             >
-              Services <i className='fas fa-caret-down' />
+              Campaign <i className='fas fa-caret-down' />
             </Link>
             {dropdown && <Dropdown />}
           </li>

@@ -1,6 +1,8 @@
 import React from 'react'
 import '../styles/Campaign.css'
-function Campaignitem({image, name, price}) {
+import {Link} from 'react-router-dom'
+function Campaignitem({image, name, price,path}) {
+  console.log(path);
   return (
    
       <div className="menuItem">
@@ -8,8 +10,8 @@ function Campaignitem({image, name, price}) {
       <h1> {name} </h1>
       <p> {price} </p>
       
-        <button type='submit'>Read more</button>
-        <button type='submit'>Donate now</button>
+        <Link to={path}><button type='submit'>Read more</button></Link>
+       <Link to="/donatenow"> <button type='submit'>Donate now</button></Link>
         
       </div>
     

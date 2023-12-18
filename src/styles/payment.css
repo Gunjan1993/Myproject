@@ -1,39 +1,96 @@
 
-
-
-table,th,td{
-    border:2px solid black;
+@media screen and (min-width:1200px) {
+    table,th,td{
+        border:2px solid black;
+        text-align: left;
+        
+    }
+    table{
+        margin:auto;
+        width:70%;
+        margin-top:20px;
+    }
+    #submitbtnn{
+        width: 300px;
+        margin-left:590px;
+        border: none;
+     
+        
+        justify-content: center;
+        background-color: red;
+        
+      
+        text-decoration: none;
+        font-size: 20px;
+        
+        
+        
+    
+        padding: 12px 30px;
+        border-radius: 4px;
+        outline: none;
+        
+        font-size: 18px;
+        color: #fff;
+        cursor: pointer;
+        
+        
+        margin-top: 100px;
+        font-weight: bold;
+    }
+    .paymentform{
+        height: 400px;
+        
+    }
+    .paymentform h2{
+        margin-top: 100px;
+    }
 }
-table{
-    margin:auto;
-    width:70%;
-    margin-top:20px;
-}
-#submitbtnn{
-    width: 300px;
-    margin-left:590px;
-    border: none;
- 
-    
-    justify-content: center;
-    background-color: red;
-    
-  
-    text-decoration: none;
-    font-size: 20px;
-    
-    
-    
 
-    padding: 12px 30px;
-    border-radius: 4px;
-    outline: none;
+@media screen and (max-width:480px) {
+    table,th,td{
+        border:2px solid black;
+        text-align: left;
+        
+    }
+    table{
+        margin:auto;
+        width:70%;
+        margin-top:20px;
+    }
+    #submitbtnn{
+        width: 300px;
+        margin-left: 15px;
+        border: none;
+     
+        
+        justify-content: center;
+        background-color: red;
+        
+      
+        text-decoration: none;
+        font-size: 20px;
+        
+        
+        
     
-    font-size: 18px;
-    color: #fff;
-    cursor: pointer;
-    
-    
-    
-    font-weight: bold;
+        padding: 12px 30px;
+        border-radius: 4px;
+        outline: none;
+        
+        font-size: 18px;
+        color: #fff;
+        cursor: pointer;
+        
+        
+        margin-top: 50px;
+        font-weight: bold;
+    }
+    .paymentform{
+        height: 400px;
+        
+    }
+    .paymentform h2{
+        margin-top: 100px;
+    }
 }

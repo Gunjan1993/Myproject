@@ -15,15 +15,18 @@ import {BrowserRouter as Router, Route, Routes} from 'react-router-dom'
 import Payment from './pages/payment';
 import Success from './pages/success';
 import Failure from './pages/failure';
-import Privacy_Policy from './pages/Privacy_Policy';
+import Privacypolicy from './pages/Privacy_Policy';
 import Terms from './pages/Terms';
 import Refundpolicy from './pages/Refundpolicy';
 import Adopt from './pages/adopt';
 import Medical from './pages/medical';
 import Blanket from './pages/blanket';
 import Grocery from './pages/Grocery';
+import Campaign from './pages/campaign';
+
 
 function App() {
+ 
   return (
     <div className="App">
       <Router>
@@ -38,13 +41,14 @@ function App() {
         <Route path="/payment"  element={<Payment/>}></Route>
         <Route path="/success"  element={<Success/>}></Route>
         <Route path="/failure"  element={<Failure/>}></Route>
-        <Route path="/privacypolicy"  element={<Privacy_Policy/>}></Route>
+        <Route path="/privacypolicy"  element={<Privacypolicy/>}></Route>
         <Route path="/termsnconditions"  element={<Terms/>}></Route>
         <Route path="/refundpolicy"  element={<Refundpolicy/>}></Route>
         <Route path="/adopt"  element={<Adopt/>}></Route>
         <Route path="/medical"  element={<Medical/>}></Route>
         <Route path="/blanket"  element={<Blanket/>}></Route>
         <Route path="/grocery"  element={<Grocery/>}></Route>
+        <Route path="/campaign"  element={<Campaign/>}></Route>
 
 
         </Routes>

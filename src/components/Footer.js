@@ -10,16 +10,21 @@ import Logo from '../assets/Logo.png'
 
 
 function Footer() {
+  const scrolltop=()=>{
+    
+      window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
+  
+  }
   return (
     <div className="footer">
       <div className='mobileview'>
         <p>ABOUT Us</p>
-        <p>Pure Devotion Foundation is the largest NGO that serves more than 10000 widows in Vrindavan every year.</p>
+        <p style={{margin: "0 10px"}}>Pure Devotion Foundation is the largest NGO that serves more than 10000 widows in Vrindavan every year.</p>
 <br></br>
         <p>CONTACT US</p>
 <p><Email/><sup>&nbsp;&nbsp;&nbsp;contact@thepuredevotion.in</sup></p>
 <p><Phone/><sup>&nbsp;&nbsp;&nbsp;8923598431 & 7221863811</sup></p>
-<p><LocationOn/><sup>1st office -116, Gautam Marg, Nirman Nagar, Jaipur-302019</sup></p>
+<p style={{margin: "0 10px"}}><LocationOn/><sup>1st office -116, Gautam Marg, Nirman Nagar, Jaipur-302019</sup></p>
 <br></br>
 
 <p>Follow us on</p>
@@ -31,10 +36,10 @@ function Footer() {
 <br></br>
 <br></br>
 <p> &copy; 2023 PureDevotion | All rights reserved</p>
-<div className='copyright'>
-      <Link to="/privacypolicy">Privacy Policy</Link>&nbsp;|&nbsp;
-      <Link>Terms and Conditions</Link>&nbsp;|&nbsp;
-      <Link>Refund Policy</Link>
+<div className='copyright' style={{margin: "0 10px",fontSize:"15px"}}>
+      <Link to="/privacypolicy" onClick={scrolltop}>Privacy Policy</Link>&nbsp;|&nbsp;
+      <Link to="/termsnconditions" onClick={scrolltop}>Terms and Conditions</Link>&nbsp;|&nbsp;
+      <Link to="/refundpolicy" onClick={scrolltop}>Refund Policy</Link>
       </div>
       </div>
       <div className='webview'>
@@ -64,9 +69,9 @@ function Footer() {
       
       <div className='copyrights'>
       <p> &copy; 2023 PureDevotion | All rights reserved</p>
-      <Link to="/privacypolicy">Privacy Policy</Link>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-      <Link to="/termsnconditions">Terms and Conditions</Link>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-      <Link to="/refundpolicy">Refund Policy</Link>
+      <Link to="/privacypolicy" onClick={scrolltop}>Privacy Policy</Link>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+      <Link to="/termsnconditions" onClick={scrolltop}>Terms and Conditions</Link>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+      <Link to="/refundpolicy" onClick={scrolltop}>Refund Policy</Link>
       </div>
       </div>
     </div>

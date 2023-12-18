@@ -9,6 +9,11 @@ import { Link,useNavigate,useLocation } from 'react-router-dom';
 
 
 function Donateform() {
+  // useEffect(() => {
+  //   // 👇️ scroll to top on page load
+  //   window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
+  //   console.log("yes")
+  // }, []);
   const location=useLocation()
    var finamount1=location.state.finamount;
    console.log(finamount1);
@@ -112,35 +117,44 @@ console.log(userReg.email)
       )}
       <form onSubmit={handleSubmit} >
       <input id='firstname' name='firstname' placeholder='First name' onChange={handleinput} value={userReg.firstname}></input>
-      <p style={{marginRight:"90px"}}>{formErrors.firstname}</p>
+      <p className='firstnamep'>{formErrors.firstname}</p>
       <input id='lastname' name='lastname' placeholder='Last Name' onChange={handleinput} value={userReg.lastname}></input>
-      <p style={{marginRight:"90px"}}>{formErrors.lastname}</p>
+      <p  className='lastnamep'>{formErrors.lastname}</p>
       <textarea id='address' name='address' placeholder='Address' onChange={handleinput} value={userReg.address}></textarea>
-      <p style={{marginRight:"90px"}}>{formErrors.address}</p>
+      <p className='addressp'>{formErrors.address}</p>
       <div style={{display:'flex'}}>
-
-      <input id='city' name='city' placeholder='City' style={{width:'180px'}} onChange={handleinput} value={userReg.city}></input>
-      <p style={{marginTop:"0px"}}>{formErrors.city}</p>
-      <input id='state' name='state' placeholder='State/Province' style={{marginLeft:'20px',width:'180px'}} onChange={handleinput} value={userReg.state}></input>
-      <p style={{marginTop:"0px"}}>{formErrors.state}</p>
+      <div>
+      <input id='city' name='city' placeholder='City'  onChange={handleinput} value={userReg.city}></input>
+      <p  className="cityp" >{formErrors.city}</p>
+      </div>
+      <div>
+      <input id='state' name='state' placeholder='State/Province'  onChange={handleinput} value={userReg.state}></input>
+      <p className="statep" >{formErrors.state}</p>
       </div>
       
-      <input id='country' name='country' placeholder='Country' onChange={handleinput} value={userReg.country} style={{marginTop:"20px"}}></input>
-      <p style={{marginRight:"90px"}}>{formErrors.country}</p>
-      <div style={{display:'flex'}}>
-      <input id='phone' name='phone' placeholder='Phone'style={{width:'180px'}} onChange={handleinput} value={userReg.phone}/>
-      <p style={{marginTop:"0px"}}>{formErrors.phone}</p>
-      <input id='email' name='email' placeholder='Email' style={{marginLeft:'20px',width:'180px'}} onChange={handleinput} value={userReg.email}></input>
-      <p style={{marginTop:"0px",marginLeft:"5px"}}>{formErrors.email}</p>
       </div>
-      <p style={{marginRight:"50px"}}>Acknowledgement of payment will be sent to this Email ID</p>
+      
+      <input id='country' name='country' placeholder='Country' onChange={handleinput} value={userReg.country} ></input>
+      <p className='countryp' >{formErrors.country}</p>
+      <div style={{display:'flex'}} className='phnemail'>
+        <div>
+        <input id='phone' name='phone' placeholder='Phone' onChange={handleinput} value={userReg.phone}/>
+      <p  className="phonep">{formErrors.phone}</p>
+        </div>
+      <div>
+      <input id='email' name='email' placeholder='Email'onChange={handleinput} value={userReg.email}></input>
+      <p className="emailp">{formErrors.email}</p>
+      </div>
+      
+      </div>
+      <p  id="ack">Acknowledgement of payment will be sent to this Email ID</p>
       <div style={{display:'flex'}}>
       <input type='checkbox'style={{width:'20px'}} id='checkdetails' onChange={(e)=>setIschecked(e.target.checked)}></input>
-      <p style={{maxWidth:'400px'}}>I have read and understood the <Link to="/termsnconditions"><span style={{color:'red'}}>Terms and Conditions</span></Link> and <Link to="/privacypolicy"><span style={{color:"red"}}>Privacy Policy</span></Link> and agree to make a donation.</p>
+      <p  id='checkp'>I have read and understood the <Link style={{textDecoration:"none"}} to="/termsnconditions"><span style={{color:'red'}}>Terms and Conditions</span></Link> and <Link to="/privacypolicy" style={{textDecoration:"none"}}><span style={{color:"red"}}>Privacy Policy</span></Link> and agree to make a donation.</p>
       
       
       </div>
-      <p id='paracheck' style={{color:"red",marginLeft:"-400px", marginTop:"-10px"}}>{formErrors.checkbox}</p>
+      <p id='paracheck' >{formErrors.checkbox}</p>
           <button  id='proceed' >PROCEED TO PAYMENT</button>
        
       

@@ -2,7 +2,7 @@
 import React,{useEffect,useState} from "react";
 import { useLocation } from "react-router-dom";
 import "../styles/payment.css"
-
+import { SHA512 } from "crypto-js";
 
 // Set the API endpoint URL
 //const apiEndpoint = "https://secure.payu.in/_payment";
@@ -19,8 +19,6 @@ const salt ="WMMC7MXGhU9p1cbn8PGgB5msXUA8I7E2" ;
 
 
 
-  
-function Payment(){
 var amount="";
 var productInfo = "PureDevotion";
 var firstName = "";
@@ -33,25 +31,31 @@ var state="";
 var country="";
 
 
-console.log(email);
+ 
+function Payment(){
+
 const [hash,setHash]=useState();
 const[transactionid,setTransactionid]=useState("txn"+Date.now())
+
 const location=useLocation()
 console.log(location.state.mail)
 email=location.state.mail;
 firstName=location.state.fn;
 lastName=location.state.ln;
 phone=location.state.phn;
-amount=location.state.finamount2;
+// amount=location.state.finamount2;
+amount="1"
 address=location.state.address;
 city=location.state.city;
 state=location.state.State;
 country=location.state.country;
 
 console.log(amount)
-
     
 useEffect(()=>{
+
+
+  
 generateHash({
     key:merchantKey,transactionid,amount,productInfo,firstName,email,salt},salt).then((res)=>{
 // var enc = new TextDecoder("utf-8");
@@ -69,9 +73,12 @@ console.log(hash);
       let hashString = params["key"] + "|" + params["transactionid"] + "|" + params["amount"] + "|" + params["productInfo"] + "|" + params["firstName"] + "|" + params["email"] + "|||||||||||" + salt;
     console.log(hashString)
       // Generate the hash
-      const hash = digestMessage(hashString);
+      // const hash = digestMessage(hashString);
     
-      return hash;
+      // return hash;
+      const hash = SHA512(hashString).toString();
+
+  return hash;
     }
     
     // function sha512(str) {
@@ -91,7 +98,7 @@ console.log(hash);
 
 
     return(
-        <>
+        <div className="paymentform">
 
         <h2>Donar Details</h2>
         <table>
@@ -124,14 +131,14 @@ console.log(hash);
     <input  type="hidden" name="email"  value={email}/>
     <input type="hidden" name="firstname" value={firstName} />
     <input type="hidden" name="lastname" value={lastName} />
-    <input type="hidden" name="surl" value="https://gunjan1993.github.io/success" />
+    <input type="hidden" name="surl" value="https://http://192.168.1.2:3000/success" />
     <input type="hidden" name="furl" value="https://gunjan1993.github.io/failure" />
     <input type="hidden" name="phone" value={phone} />
     <input type="hidden" name="hash" value={hash} />
     <input type="submit" id="submitbtnn" value="Checkout" /> 
     </form>
        
-        </>
+        </div>
     );
 
     
