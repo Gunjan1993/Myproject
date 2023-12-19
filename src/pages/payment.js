@@ -131,8 +131,8 @@ console.log(hash);
     <input  type="hidden" name="email"  value={email}/>
     <input type="hidden" name="firstname" value={firstName} />
     <input type="hidden" name="lastname" value={lastName} />
-    <input type="hidden" name="surl" value="https://http://192.168.1.2:3000/success" />
-    <input type="hidden" name="furl" value="https://gunjan1993.github.io/failure" />
+    <input type="hidden" name="surl" value="https://myproject-git-main-gunjan-goyals-projects.vercel.app/success" />
+    <input type="hidden" name="furl" value="https://myproject-git-main-gunjan-goyals-projects.vercel.app/failure" />
     <input type="hidden" name="phone" value={phone} />
     <input type="hidden" name="hash" value={hash} />
     <input type="submit" id="submitbtnn" value="Checkout" /> 
