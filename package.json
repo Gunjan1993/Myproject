@@ -1,7 +1,7 @@
 {
   "name": "thepuredevotion",
   "version": "0.1.0",
-  "homepage": "https://gunjan1993.github.io/Myproject",
+  "homepage": "./",
   "private": true,
   "dependencies": {
     "@babel/plugin-proposal-private-property-in-object": "7.21.11",
