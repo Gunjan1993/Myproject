@@ -24,7 +24,7 @@ function Footer() {
         <p>CONTACT US</p>
 <p><Email/><sup>&nbsp;&nbsp;&nbsp;contact@thepuredevotion.in</sup></p>
 <p><Phone/><sup>&nbsp;&nbsp;&nbsp;8923598431 & 7221863811</sup></p>
-<p style={{margin: "0 10px"}}><LocationOn/><sup>1st office -116, Gautam Marg, Nirman Nagar, Jaipur-302019</sup></p>
+<p style={{margin: "0 10px"}}><LocationOn/><sup>Pure Devotion Foundation-Radha Kund Bypass Towards Barsana Road, near Radha Kund Vrindavan Marg Crossing</sup></p>
 <br></br>
 
 <p>Follow us on</p>
@@ -47,7 +47,7 @@ function Footer() {
       <div className='contactleft'>
       <div style={{float:'left'}}><img src={Logo} alt='Pure Devotion'/></div>
       
-      <div style={{padding:'20px'}}><p>Pure Devotion Foundation is the largest NGO that serves more than 10000 widows in Vrindavan every year.</p></div>
+      <div style={{padding:'20px'}}><p>Pure Devotion Foundation is the largest NGO that serves more than 10,000 widows in Vrindavan every year.</p></div>
       <div className="socialMedia">
       <a href='https://www.instagram.com/puredevotionfoundation/' id='insta' ><FontAwesomeIcon icon={faInstagram} size='2x'></FontAwesomeIcon></a> 
 &nbsp;&nbsp;&nbsp;
@@ -62,7 +62,7 @@ function Footer() {
       <p>CONTACT US</p>
 <p><Email/><sup>&nbsp;&nbsp;&nbsp;contact@thepuredevotion.in</sup></p>
 <p><Phone/><sup>&nbsp;&nbsp;&nbsp;8923598431 & 7221863811</sup></p>
-<p><LocationOn/><sup>1st office -116, Gautam Marg, Nirman Nagar, Jaipur-302019</sup></p>
+<p><LocationOn/><sup>Pure Devotion Foundation-Radha Kund Bypass Towards Barsana Road, &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;near Radha Kund Vrindavan Marg Crossing</sup></p>
 
       </div>
       </div>

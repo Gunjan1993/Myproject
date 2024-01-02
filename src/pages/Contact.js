@@ -16,7 +16,7 @@ function Contact() {
       <div className="rightSide">
         <h1> Contact Us</h1>
 
-        <form id="contact-form" method="POST" action="contact@thepuredevotion.in" enctype="text/plain" autocomplete="on" target="_self">
+        <form id="contact-form" method="POST" action="mailto:contact@thepuredevotion.in" enctype="text/plain" autocomplete="on" >
           <label htmlFor="name">Full Name</label>
           <input name="name" placeholder="Enter full name..." type="text" />
           <label htmlFor="email">Email</label>
@@ -29,7 +29,7 @@ function Contact() {
             name="message"
             required
           ></textarea>
-          <button type="submit"> Send Message</button>
+          <input type="submit"> Send Message</input>
         </form>
       </div>
     </div>

@@ -16,7 +16,7 @@ function Medical() {
         <div className='medicalleft' > 
           <div className='medicalright'>
             <h2 >Help Widows with Monthly Medical Care - 700 ₹</h2>
-            <p  >  We conduct regular check-ups for them and ensure they receive their life-saving medications on a monthly basis.<br></br>Your continued support empowers us to uphold their health and well-being, ensuring a brighter and healthier journey in their golden years.</p>
+            <p id='pararightmedical' >  We conduct regular check-ups for them and ensure they receive their life-saving medications on a monthly basis.<br></br>Your continued support empowers us to uphold their health and well-being, ensuring a brighter and healthier journey in their golden years.</p>
             <Link to="/donatenow"><button id='checkout'>Donate now</button></Link>
         </div>
           

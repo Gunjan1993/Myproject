@@ -51,7 +51,7 @@ state=location.state.State;
 country=location.state.country;
 
 console.log(amount)
-    
+
 useEffect(()=>{
 
 
@@ -73,28 +73,15 @@ console.log(hash);
       let hashString = params["key"] + "|" + params["transactionid"] + "|" + params["amount"] + "|" + params["productInfo"] + "|" + params["firstName"] + "|" + params["email"] + "|||||||||||" + salt;
     console.log(hashString)
       // Generate the hash
-      // const hash = digestMessage(hashString);
-    
+     
       // return hash;
       const hash = SHA512(hashString).toString();
 
   return hash;
     }
     
-    // function sha512(str) {
-    //   const encoder = new TextEncoder();
-    // const data = encoder.encode(str);
-    //   return crypto.subtle.digest("SHA-512",data);
-    // }
-    async function digestMessage(message) {
-      const msgUint8 = new TextEncoder().encode(message); // encode as (utf-8) Uint8Array
-      const hashBuffer = await crypto.subtle.digest("SHA-512", msgUint8); // hash the message
-      const hashArray = Array.from(new Uint8Array(hashBuffer)); // convert buffer to byte array
-      const hashHex = hashArray
-        .map((b) => b.toString(16).padStart(2, "0"))
-        .join(""); // convert bytes to hex string
-      return hashHex;
-    }
+   
+    
 
 
     return(
@@ -131,8 +118,8 @@ console.log(hash);
     <input  type="hidden" name="email"  value={email}/>
     <input type="hidden" name="firstname" value={firstName} />
     <input type="hidden" name="lastname" value={lastName} />
-    <input type="hidden" name="surl" value="https://status-sable.vercel.app/success" />
-    <input type="hidden" name="furl" value="https://status-sable.vercel.app/failure" />
+    <input type="hidden" name="surl" value="http://localhost:3000/success"  />
+    <input type="hidden" name="furl" value="http://localhost:3000/failure" />
     <input type="hidden" name="phone" value={phone} />
     <input type="hidden" name="hash" value={hash} />
     <input type="submit" id="submitbtnn" value="Checkout" /> 

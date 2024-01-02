@@ -22,7 +22,7 @@ We urge you to come forward and help them. You might not be able to make the jou
     <div className='adoptleft' > 
       <div className='adoptright'>
         <h2 >Contribute 1500 ₹ per month to adopt a Mataji</h2>
-        <p  >We urge you to come forward and help them. You might not be able to make the journey to the Vrindavan, but you can definitely help feed hundred of widows by donating them.</p>
+        <p  id='pararightadopt'>We urge you to come forward and help them. You might not be able to make the journey to the Vrindavan, but you can definitely help feed hundred of widows by donating them.</p>
         <Link to="/donatenow"><button id='checkout'>Donate now</button></Link>
     </div>
       

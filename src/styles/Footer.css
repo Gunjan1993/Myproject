@@ -121,7 +121,14 @@ color: white;
   }
   @media only screen and (min-width: 1200px) {
     .mobileview{
-        display:none;}
-
+    display:none;
+    }
+    .contactright
+    {
+     margin-right: 50px;
+    }
+    .copyrights {
+      margin-right: 30px;
+    }
     }
   

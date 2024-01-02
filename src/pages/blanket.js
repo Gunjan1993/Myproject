@@ -16,7 +16,7 @@ We are distributing high-quality mink blankets, each weighing 2 kg, to provide w
         <div className='blanketleft' > 
           <div className='blanketright'>
             <h2 >Gift blanket to Widows's in Vrindavan- 600 ₹</h2>
-            <p  > There are thousands of Matajis, and we need your small support so that we can provide blankets to all of them. Please come forward and contribute by donating blankets for their comfort and warmth.<br></br>Your compassionate gesture will bring solace and warmth to the hearts of these Matajis during the chilly winter nights.</p>
+            <p id='pararightblanket' > There are thousands of Matajis, and we need your small support so that we can provide blankets to all of them. Please come forward and contribute by donating blankets for their comfort and warmth.<br></br>Your compassionate gesture will bring solace and warmth to the hearts of these Matajis during the chilly winter nights.</p>
             <Link to="/donatenow"><button id='checkout'>Donate now</button></Link>
         </div>
           
