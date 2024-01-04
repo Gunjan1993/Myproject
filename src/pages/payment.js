@@ -3,6 +3,7 @@ import React,{useEffect,useState} from "react";
 import { useLocation } from "react-router-dom";
 import "../styles/payment.css"
 import { SHA512 } from "crypto-js";
+import axios from "axios";
 
 // Set the API endpoint URL
 //const apiEndpoint = "https://secure.payu.in/_payment";
@@ -33,6 +34,8 @@ var country="";
 
  
 function Payment(){
+const objsurl={surl:"https://thepuredevotion.in/success",furl:"https://thepuredevotion.in/failure"};
+const [surldata,setSurldata]=useState(objsurl)
 
 const [hash,setHash]=useState();
 const[transactionid,setTransactionid]=useState("txn"+Date.now())
@@ -80,7 +83,19 @@ console.log(hash);
   return hash;
     }
     
-   
+    async function hs() {
+      try {
+        const response = await axios.post('https://secure.payu.in/_payment', null, {
+          params: surldata,
+          headers: {
+            'Content-Type': 'application/x-www-form-urlencoded',
+          },
+        });
+        console.log(response);
+      } catch (error) {
+        console.error('Error submitting payment:', error);
+      }
+    }
     
 
 
@@ -110,7 +125,7 @@ console.log(hash);
          
 
         </table>
-        <form action='https://secure.payu.in/_payment' method='post'>
+        <form action='https://secure.payu.in/_payment' method='post' onSubmit={hs}>
     <input type="hidden" name="key" value={merchantKey} />
     <input type="hidden" name="txnid" value={transactionid} />
     <input type="hidden" name="productinfo" value="PureDevotion" />
@@ -118,8 +133,8 @@ console.log(hash);
     <input  type="hidden" name="email"  value={email}/>
     <input type="hidden" name="firstname" value={firstName} />
     <input type="hidden" name="lastname" value={lastName} />
-    <input type="hidden" name="surl" value="http://localhost:3000/success"  />
-    <input type="hidden" name="furl" value="http://localhost:3000/failure" />
+    <input type="hidden" name="surl" value={surldata.surl}  />
+    <input type="hidden" name="furl" value={surldata.furl} />
     <input type="hidden" name="phone" value={phone} />
     <input type="hidden" name="hash" value={hash} />
     <input type="submit" id="submitbtnn" value="Checkout" /> 
