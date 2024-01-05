@@ -34,7 +34,7 @@ var country="";
 
  
 function Payment(){
-const objsurl={surl:"https://thepuredevotion.in/success",furl:"https://thepuredevotion.in/failure"};
+const objsurl={surl:"https://www.thepuredevotion.in/success",furl:"https://www.thepuredevotion.in/failure"};
 const [surldata,setSurldata]=useState(objsurl)
 
 const [hash,setHash]=useState();
