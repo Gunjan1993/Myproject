@@ -37,7 +37,7 @@ var country="";
 function Payment(){
   const history = useNavigate();
 
-const objsurl={surl:"https://myproject-tau-taupe.vercel.app/success",furl:"https://www.thepuredevotion.in/failure"};
+const objsurl={surl:"https://www.thepuredevotion.in/success",furl:"https://www.thepuredevotion.in/failure"};
 const [surldata,setSurldata]=useState(objsurl)
 
 const [hash,setHash]=useState();
