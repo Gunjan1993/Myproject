@@ -4,6 +4,7 @@ import { useLocation } from "react-router-dom";
 import "../styles/payment.css"
 import { SHA512 } from "crypto-js";
 import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
 // Set the API endpoint URL
 //const apiEndpoint = "https://secure.payu.in/_payment";
@@ -34,11 +35,16 @@ var country="";
 
  
 function Payment(){
-const objsurl={surl:"https://www.thepuredevotion.in/success",furl:"https://www.thepuredevotion.in/failure"};
+  const history = useNavigate();
+
+const objsurl={surl:"https://myproject-tau-taupe.vercel.app/success",furl:"https://www.thepuredevotion.in/failure"};
 const [surldata,setSurldata]=useState(objsurl)
 
 const [hash,setHash]=useState();
 const[transactionid,setTransactionid]=useState("txn"+Date.now())
+
+
+
 
 const location=useLocation()
 console.log(location.state.mail)
@@ -46,8 +52,8 @@ email=location.state.mail;
 firstName=location.state.fn;
 lastName=location.state.ln;
 phone=location.state.phn;
-amount=location.state.finamount2;
-//amount="1"
+//amount=location.state.finamount2;
+amount="1"
 address=location.state.address;
 city=location.state.city;
 state=location.state.State;
@@ -92,10 +98,12 @@ console.log(hash);
           },
         });
         console.log(response);
+        history('/success');
       } catch (error) {
         console.error('Error submitting payment:', error);
       }
     }
+    
     
 
 

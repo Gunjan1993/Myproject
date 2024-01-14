@@ -12,21 +12,21 @@ app.listen(port,()=>{
 console.log(`Server works on ${port}`)
 })
 
-const proute=require('..src/pages/')
+
 app.get('/api',(req,res)=>{
     res.send("This is from server")
 });
 
-app.post('/failure',async(req,res)=>{
-    try{
-        console.log(req.body)
-        return res.redirect("http://localhost:3000/failure")
-    }
-    catch{
-        console.log(error)
-    }
+// app.post('/failure',async(req,res)=>{
+//     try{
+//         console.log(req.body)
+//        // return res.redirect("http://localhost:3000/failure")
+//     }
+//     catch{
+//         console.log(error)
+//     }
     
-})
+// })
 app.post('/success',async(req,res)=>{
     try{
         console.log(req.body)
