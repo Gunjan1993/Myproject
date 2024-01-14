@@ -14,9 +14,9 @@ function Home() {
     <div>
     <div className="home" >
       <div className="headerContainer">
-        
+        Site under Construction
         <Link to="/donatenow">
-          <button> Donate Now </button>
+          {/* <button> Donate Now </button> */}
         </Link>
       </div>
     </div>
